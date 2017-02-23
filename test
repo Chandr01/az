@@ -1,0 +1,26 @@
+
+# -*- coding: utf-8 -*-
+import requests
+Token = 'trnsl.1.1.20170223T023502Z.08031616a4c9886f.009e5393ef222165e61d03d7b0982d658e29bf7a'
+URL = 'https://translate.yandex.net/api/v1.5/tr.json/translate'
+b = ()
+with open('C:\\Users\\sep\\Desktop\\temp.txt', 'r') as file:
+    def transl(mytext):
+        params = {
+            'key': Token,
+            'text': mytext,
+            'lang': 'ru-az'
+        }
+        response = requests.get(URL, params=params)
+        return response.json()
+
+    json = transl(file)
+    print(''.join(json['text']))
+    b = (''.join(json['text']))
+
+print(b)
+print(type(b))
+
+with open('C:\\Users\\sep\\Desktop\\temp.txt', 'w') as ff:
+
+    ff.write(b)
