@@ -10,3 +10,7 @@ d = OrderedDict([
 
 a = 3
 print(d.keys())
+
+# new
+
+print(a)
