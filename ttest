@@ -1,0 +1,12 @@
+from collections import OrderedDict
+from requests import get, post
+
+
+d = OrderedDict([
+    ('pen', 3),
+    ('penaple', 2),
+    ('spple', 1)
+])
+
+
+print(d.keys())
