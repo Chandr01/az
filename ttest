@@ -7,6 +7,6 @@ d = OrderedDict([
     ('penaple', 2),
     ('apple', 1)
 ])
-
+s = 1
 a = 3
 print(d.keys())
